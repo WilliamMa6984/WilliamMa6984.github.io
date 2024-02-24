@@ -1,3 +1,9 @@
+# Github pages-React integration
+From: https://github.com/gitname/react-gh-pages/tree/gh-pages
+
+Deploy to static for Github pages:
+### `npm run deploy`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
