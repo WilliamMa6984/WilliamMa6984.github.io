@@ -1,31 +1,14 @@
 html {
-  background-color: black;
+  background-color: #001825;
 }
 
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #26686D;
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-body {
@@ -43,11 +26,92 @@ html {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.RepoList {
+  padding: 10vh 5vw 10vh 5vw;
+}
+
+a {
+  color: inherit;
+}
+
+.RepoItem {
+  background-color: #26686D;
+  font-size: 0.75em;
+  margin: 5px;
+  width: 20vw;
+  height: 22vh;
+
+  display: inline-flex;
+  vertical-align: bottom;
+  flex-shrink: 1 0 auto;
+
+  transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+
+.RepoItemWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.RepoItemTop {
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #002D47;
+}
+
+.RepoItemBottom {
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  user-select: none;
+}
+
+.RepoItemLeft {
+  text-align: left;
+  user-select: none;
+}
+
+.RepoItemRight {
+  text-align: right;
+  user-select: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+  align-self: flex-end;
+}
+
+.RepoItemBottom > p {
+  text-align: left;
+  text-overflow: ellipsis;
+  
+  width: 100%;
+  height: 10vh;
+  padding: 1em;
+}
+
+.RepoItemRight > p {
+  margin-left: 25%;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.RepoItemLeft > a {
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  text-align: right;
+  vertical-align: top;
+
+  color: white;
+}
+
+.RepoItemLeft > img {
+  height: 10vh;
 }
