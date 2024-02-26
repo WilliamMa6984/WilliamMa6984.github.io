@@ -105,7 +105,7 @@ class Repos extends Component {
                         <p>{repo.name.replaceAll(/-|_/g, " ").toUpperCase()}</p>
                     </div>
                 </div>
-                <div className="RepoItemBottom" style={{backgroundImage: "url('https://raw.githubusercontent.com/" + repo.full_name + "/main/GithubPagesThumbnail/thumbnail.png')"}}>
+                <div className="RepoItemBottom" style={{backgroundImage: "url('https://raw.githubusercontent.com/" + repo.full_name + "/" + repo.default_branch + "/GithubPagesThumbnail/thumbnail.png')"}}>
                     <p>{repo.description}</p>
                 </div>
             </div>
