@@ -45,7 +45,11 @@ a {
   vertical-align: bottom;
   flex-shrink: 1 0 auto;
 
-  transition: width 0.75s ease-in-out, height 0.75s ease-in-out;
+  transition: width 0.75s ease-in-out, height 0.75s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.RepoItem:hover {
+  box-shadow: 0em 0em 3em -1em #26686D;
 }
 
 .RepoItemWrapper {
